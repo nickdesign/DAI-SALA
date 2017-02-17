@@ -1,10 +1,10 @@
 # Site settings
-title: SALA
-subtitle: BSP
+title: The SALA
+subtitle: Story
 email: youremailaddress@gmail.com
-description: Brand Strategy and Positioning for <br />UBC School of Architecture and Landspace Architecture
-baseurl: "/sala" # the subpath of your site, e.g. /blog
-url: "https://nickdesign.github.io/DAI-SALA" # the base hostname & protocol for your site
+description: SALA Brand Strategy & Positioning and Brand Story
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://verygoodcreative.co" # the base hostname & protocol for your site
 author: David Allison Inc
 street_address: 1234 Somewhere Road
 city: Nashville
@@ -15,7 +15,7 @@ phone: (716) 555-5555
 
 # Homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
-tiles-count: 6
+tiles-count: 7
 
 # Social settings
 500px_url:
