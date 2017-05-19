@@ -1,0 +1,343 @@
+/*	Main Text Styling	*/
+
+body {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 3em;
+	color: #002145;
+}
+
+h1.phrase {
+	font-size: 2em;
+	font-weight: 300;
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 2em;
+	color: #002145;
+}
+
+h2.title {
+	padding-top: 50px;
+}
+
+h3 {
+	font-weight: 900;
+	color: #002145;
+}
+
+h4 {
+	font-weight: 900;
+	color: #545677;
+}
+
+h5 {
+	font-weight: 900;
+	color: #545677;
+	font-size: 1em;
+}
+
+h5.tag {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1em;
+}
+
+p {
+	color: #545677;
+}
+
+ul {
+	color: #545677;	
+}
+
+ul.list {
+	display: block;
+	list-style-type: decimal;
+}
+
+ul.list li {
+	display: list-item;
+}
+
+.toolbox-text ul {
+	list-style-type: none;
+	display: list-item;
+}
+
+.toolbox-text {
+	padding-bottom: 25px;
+}
+
+/*  Menu Styling  */
+
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+	color: #545677;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+/*Style for menu links*/
+li a {
+	display:block;
+	min-width:140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	color: #002145 ;
+	background: #fff;
+	text-decoration: none;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+	background: #fff;
+	color: #545677;
+}
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	font-size: 1em;
+	text-decoration: none;
+	color: #545677;
+	background: #fff;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+ul#menu {
+	
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/*Responsive Styles*/
+
+
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+
+
+
+/*	Spacing and Positioning  */
+
+.main-header {
+	margin: 50px 25px;
+}
+
+.sub-header {
+	margin-bottom: 25px;
+}
+
+.fade-image-large, .fade-image-small {
+	opacity: .25;
+	margin-top: -180px;
+	margin-left: -25px;
+	margin-right: 25px;
+}
+
+.body-intro {
+	margin: 25px 0px 0px 0px;
+}
+
+.content {
+	padding: 25px;
+}
+
+.center {
+	text-align: center;
+}
+
+h1.phrase {
+	padding: 50px 0;
+}
+
+.down-arrow {
+	display: none;
+}
+
+.toolbox-item h5 {
+	padding: 25px 0 0 0;
+}
+
+
+
+/*	Button Modification  */
+
+.button {
+	background-color: #002145;
+	font-weight: 900;
+	border-radius: 25px;
+}
+a.button {
+	padding: 15px;
+}
+
+.button-group .button {
+	font-size: .7rem;
+	margin: 5px;
+}
+
+.button.active {
+	background: white;
+	color: #002145;
+	border-color: #002145;
+	border-width: 2px;
+}
+
+.flex-arrows {
+	display: flex;
+	justify-content: center;
+	height: 75px;
+	padding: 25px;
+	margin-bottom: 25px;
+}
+
+.flex-arrows img {
+	margin: 0 25px;
+}
+
+.desktop {
+	display: none;
+}
+
+.strategy-image {
+	display: none;
+}
+
+.footer {
+	display: inline-block;
+	padding: 25px 25px 0px 25px;
+}
+
+.footer h5 {
+	display: inline-block;
+	color: #000;
+}
+
+.footer img {
+	margin-top: -2px;
+}
+
+/*	iPad  */
+
+@media (min-width: 600px) and (max-width: 1200px) {
+	.fade-image {
+	opacity: .25;
+	margin-top: -350px;
+	margin-left: -25px;
+	margin-right: 25px;
+	}
+	.content {
+	width: 60%;
+	margin: 0 auto;
+	padding: 50px 0;
+	}
+}
+
+/*	Desktop  */
+
+@media (min-width: 1200px) {
+	.fade-image-large {
+		margin: -425px 150px -200px -150px;
+	}
+	.fade-image-small {
+		margin: -150px -25px 0px 25px;
+	}
+	.content {
+	width: 60%;
+	margin: 0 auto;
+	padding: 50px 0;
+	}
+	.desktop {
+		display: block;
+	}
+	.mobile {
+		display: none;
+	}
+	.button-group {
+		display: flex;
+		justify-content: center;
+	}
+	h1.phrase {
+	font-size: 3em;
+	}
+	.strategy-image {
+		display: block;
+		opacity: .2;
+		margin: -300px -500px 50px 450px;
+	}
+	.down-arrow {
+		display: flex;
+		justify-content: center;
+	}
+	.toolbox-item {
+		padding-top: 50px;
+	}
+	.toolbox-text {
+		width: 50%;
+	}
+	.toolbox-right {
+		text-align: right;
+		width: 100%;
+		padding-left: 50%;
+	}
+	.footer {
+		padding-bottom: 25px;
+	}
+}
